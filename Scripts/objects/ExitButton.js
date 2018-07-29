@@ -10,17 +10,17 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var objects;
 (function (objects) {
-    var Button = /** @class */ (function (_super) {
-        __extends(Button, _super);
+    var ExitButton = /** @class */ (function (_super) {
+        __extends(ExitButton, _super);
         // constructors
         /**
-         * Creates an instance of Button.
+         * Creates an instance of InstructionButton.
          * @param {string} imagePath
          * @param {number} [x=0]
          * @param {number} [y=0]
          * @param {boolean} [isCentered=false]
          */
-        function Button(imagePath, x, y, isCentered) {
+        function ExitButton(imagePath, x, y, isCentered) {
             if (x === void 0) { x = 0; }
             if (y === void 0) { y = 0; }
             if (isCentered === void 0) { isCentered = false; }
@@ -37,10 +37,10 @@ var objects;
             return _this;
         }
         // private methods
-        Button.prototype._MouseOver = function () {
+        ExitButton.prototype._MouseOver = function () {
             this.alpha = 0.7; // change alpha transparency to 70%
         };
-        Button.prototype._MouseOut = function () {
+        ExitButton.prototype._MouseOut = function () {
             this.alpha = 1.0; // change alpha transparency to 100%
         };
         // public methods
@@ -49,14 +49,14 @@ var objects;
          *
          * @returns {void}
          */
-        Button.prototype.Start = function () {
+        ExitButton.prototype.Start = function () {
         };
-        Button.prototype.Update = function () {
+        ExitButton.prototype.Update = function () {
         };
-        Button.prototype.Reset = function () {
+        ExitButton.prototype.Reset = function () {
         };
-        return Button;
+        return ExitButton;
     }(objects.GameObject));
-    objects.Button = Button;
+    objects.ExitButton = ExitButton;
 })(objects || (objects = {}));
-//# sourceMappingURL=button.js.map
+//# sourceMappingURL=ExitButton.js.map

@@ -10,8 +10,8 @@
 
     let Manifest = [
         {id: "StartButton", src:"/Assets/images/StartButton.png"},
-        {id: "NextButton", src:"/Assets/images/NextButton.png"},
-        {id: "BackButton", src:"/Assets/images/BackButton.png"},
+        {id: "InstructionButton", src:"/Assets/images/InstructionButton.png"},
+        {id: "ExitButton", src:"/Assets/images/ExitButton.png"},
         {id: "plane", src:"/Assets/images/plane.png"},
         {id: "ocean", src:"/Assets/images/ocean.gif"},
         {id: "island", src:"/Assets/images/island.png"},
@@ -75,6 +75,10 @@
 
             case config.Scene.PLAY:
             CurrentScene = new scenes.Play();
+            break;
+
+            case config.Scene.INSTRUCTION:
+            CurrentScene = new scenes.Instruction();
             break;
 
             case config.Scene.END:
